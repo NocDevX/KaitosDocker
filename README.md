@@ -4,8 +4,8 @@ Arquivos para serem utilizados com o [backend](https://github.com/NocDevX/Kaitos
 Para utilizar sem alterações, mantenha o front e back dentro de uma pasta mãe e os arquivos deste repositório na mesma.
 
 Exemplo da estrutura:
-  Raiz:
-    Kaitos
-    KaitosAPI
-    docker-compose.yml
-    Dockerfiles
+  - Raiz
+    - Kaitos
+    - KaitosAPI
+    - docker-compose.yml
+    - Dockerfiles
