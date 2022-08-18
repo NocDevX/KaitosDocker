@@ -7,5 +7,6 @@ Exemplo da estrutura:
   - Raiz
     - Kaitos
     - KaitosAPI
-    - docker-compose.yml
-    - Dockerfiles
+    - KaitosDocker
+      - docker-compose.yml
+      - Dockerfiles
