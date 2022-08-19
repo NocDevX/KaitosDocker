@@ -18,8 +18,9 @@ services:
   backend:
     container_name: kaitos_backend
     image: php:8.1
+    command: sh -c "composer install && php artisan serve"
     build:
-      context: ./Dockerfiles/php-nginx
+      context: ./Dockerfiles/api
       dockerfile: Dockerfile
     volumes:
       - ../KaitosAPI:/var/www
