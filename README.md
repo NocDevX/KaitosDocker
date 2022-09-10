@@ -1,9 +1,8 @@
 # Arquivos docker
 
 Arquivos para serem utilizados com o [backend](https://github.com/NocDevX/KaitosAPI) e [frontend](https://github.com/NocDevX/Kaitos) da aplicação.
-Para utilizar sem alterações, mantenha o front e back dentro de uma pasta mãe e os arquivos deste repositório na mesma.
+Para utilizar sem alterações, siga a estrutura de pastas descrita abaixo:
 
-Exemplo da estrutura:
   - Raiz
     - Kaitos
     - KaitosAPI
