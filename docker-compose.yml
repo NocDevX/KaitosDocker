@@ -10,13 +10,7 @@ services:
       dockerfile: /dockerfiles/app/Dockerfile
     restart: unless-stopped
     volumes:
-      - type: bind
-        source: ./kaitos/src
-        target: /var/www/src
-
-      - type: bind
-        source: ./kaitos/index.html
-        target: /var/www/index.html
+      - ./kaitos/src:/var/www/src
     ports:
       - 3000:3000
     networks:
