@@ -14,8 +14,35 @@ services:
     ports:
       - 3000:3000
     networks:
-      - net
+      - app_api
+    # depends_on:
+    #   - kaitos_api
+
+  kaitos_proxy:
+    container_name: kaitos_proxy
+    image: kaitos_proxy
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/web/Dockerfile
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8000:8000
+    networks:
+      - api_db
+
+  kaitos_api:
+    container_name: kaitos_api
+    image: kaitos_api
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/api/Dockerfile
+    networks:
+      - api_db
+
 
 networks:
-  net:
+  app_api:
+    driver: bridge
+  api_db:
     driver: bridge
