@@ -7,7 +7,7 @@ services:
     command: "npm run dev"
     build:
       context: ./
-      dockerfile: /dockerfiles/app/Dockerfile
+      dockerfile: ./dockerfiles/app/Dockerfile
     restart: unless-stopped
     volumes:
       - ./kaitos/src:/var/www/src
